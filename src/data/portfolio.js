@@ -117,7 +117,7 @@ export const projects = [
       'A pixel-perfect Spotify-inspired music player UI built with HTML5 and CSS3, featuring sidebar navigation, music library, and now-playing bar. Includes advanced CSS Flexbox/Grid layouts, custom animations, and vanilla JavaScript controls for play/pause, track navigation, and progress bar via DOM manipulation.',
     stack: ['HTML5', 'CSS3', 'JavaScript', 'Flexbox', 'Grid', 'DOM APIs'],
     github: 'https://github.com/antish4149',
-    live: '#',
+    live: 'https://sportify-peach.vercel.app/',
   },
 ]
 
