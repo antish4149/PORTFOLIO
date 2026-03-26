@@ -15,7 +15,7 @@ export const personal = {
   phone: '+91-6261698492',
   location: 'Phagwara, Punjab, India',
   github: 'https://github.com/antish4149',
-  linkedin: 'https://www.linkedin.com/in/antish-kumar-yadav-5394052a2/',
+  linkedin: 'https://www.linkedin.com/in/antish-kumar-yadav/',
   available: true,
 }
 
@@ -155,6 +155,6 @@ export const certificates = [
     name: 'Data Structures & Algorithms with Java',
     issuer: 'Apna College',
     date: 'Jun 2025',
-    link: '#',
+    link: 'https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto',
   },
 ]
