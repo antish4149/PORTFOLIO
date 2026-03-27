@@ -86,7 +86,7 @@ export default function Experience() {
 
         {/* Certificates */}
         <div style={{ marginTop: 64 }}>
-          <p className="section-label">Certifications</p>
+          <p className="section-label">Certificate</p>
 
           <StaggerGrid style={{
             display: 'grid',
