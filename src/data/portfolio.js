@@ -155,6 +155,6 @@ export const certificates = [
     name: 'Data Structures & Algorithms with Java',
     issuer: 'Apna College',
     date: 'Jun 2025',
-    link: 'https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto',
+    link: 'https://drive.google.com/file/d/1rmvJ2vpeI29H5uBleeN1uyKiRCO0ooqE/view?usp=sharing',
   },
 ]
