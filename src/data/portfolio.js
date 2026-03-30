@@ -16,13 +16,14 @@ export const personal = {
   location: 'Phagwara, Punjab, India',
   github: 'https://github.com/antish4149',
   linkedin: 'https://www.linkedin.com/in/antish-kumar-yadav/',
+  image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop',
   available: true,
 }
 
 export const stats = [
   { num: '3+', label: 'Full-Stack Projects' },
   { num: '6.9', label: 'CGPA at LPU' },
-  { num: '3',   label: 'Certifications' },
+  { num: '3', label: 'Certifications' },
 ]
 
 export const education = [
@@ -92,6 +93,7 @@ export const projects = [
     description:
       'A full-stack real-time whiteboard with JWT authentication, Google OAuth, role-based access control, and persistent canvas storage for simultaneous multi-user collaboration. Features live drawing sync via Socket.IO, undo/redo, in-room chat, and WebRTC peer-to-peer video calling with screen sharing. Deployed on Railway + Vercel with MongoDB Atlas.',
     stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'WebRTC', 'JWT', 'Canvas API'],
+    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1470&auto=format&fit=crop',
     github: 'https://github.com/antish4149',
     live: '#',
   },
@@ -104,6 +106,7 @@ export const projects = [
     description:
       'A full-stack property rental platform built with Node.js + Express MVC architecture, MongoDB for listings and bookings, EJS server-side rendering across 10+ routes, complete CRUD operations, image uploads, review/rating system, and session-based authentication with role-based access control.',
     stack: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'Bootstrap', 'REST APIs'],
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1073&auto=format&fit=crop',
     github: 'https://github.com/antish4149',
     live: '#',
   },
@@ -116,6 +119,7 @@ export const projects = [
     description:
       'A pixel-perfect Spotify-inspired music player UI built with HTML5 and CSS3, featuring sidebar navigation, music library, and now-playing bar. Includes advanced CSS Flexbox/Grid layouts, custom animations, and vanilla JavaScript controls for play/pause, track navigation, and progress bar via DOM manipulation.',
     stack: ['HTML5', 'CSS3', 'JavaScript', 'Flexbox', 'Grid', 'DOM APIs'],
+    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1374&auto=format&fit=crop',
     github: 'https://github.com/antish4149',
     live: 'https://sportify-peach.vercel.app/',
   },
@@ -141,7 +145,8 @@ export const certificates = [
     name: 'Computational Theory: Language Principles & Finite Automata',
     issuer: 'Infosys',
     date: 'Aug 2025',
-    link: 'https://drive.google.com/file/d/16Hj2Q5Kza3WnRv2iqKfpCuPSmVSpeED7/view',
+    link: 'https://drive.google.com/file/d/1mxDOdSc7HBe-ql0lVKlF3dfRfl93AcrY/view?usp=drive_link',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1470&auto=format&fit=crop',
   },
   {
     icon: '🌐',
@@ -149,6 +154,7 @@ export const certificates = [
     issuer: 'Apna College',
     date: 'Sep 2024',
     link: '#',
+    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1470&auto=format&fit=crop',
   },
   {
     icon: '☕',
@@ -156,5 +162,6 @@ export const certificates = [
     issuer: 'Apna College',
     date: 'Jun 2025',
     link: 'https://drive.google.com/file/d/1rmvJ2vpeI29H5uBleeN1uyKiRCO0ooqE/view?usp=sharing',
+    image: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=1528&auto=format&fit=crop',
   },
 ]

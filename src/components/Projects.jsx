@@ -68,38 +68,38 @@ function FeaturedCard({ project }) {
         transition: 'border-color 0.3s',
       }}
     >
-      {/* Left panel */}
+      {/* Image panel */}
       <div style={{
-        padding: '28px 28px 28px 30px',
-        minWidth: 280, flex: '0 0 auto',
+        position: 'relative',
+        minWidth: 280, flex: '1 1 45%',
         borderRight: '1px solid var(--border)',
-        display: 'flex', flexDirection: 'column', gap: 16,
+        minHeight: 260,
+        background: project.image ? `url(${project.image}) center/cover no-repeat` : 'var(--surface)',
       }}>
-        <span style={{
-          background: 'var(--accent-dim)', border: '1px solid rgba(0,229,160,0.25)',
-          color: 'var(--accent)', fontFamily: 'JetBrains Mono, monospace',
-          fontSize: '0.62rem', letterSpacing: '0.12em',
-          textTransform: 'uppercase', padding: '4px 10px',
-          borderRadius: 4, display: 'inline-block',
-        }}>
-          ⭐ Featured Project
-        </span>
-        <div style={{
-          width: 52, height: 52, borderRadius: 14,
-          background: 'var(--accent-dim)', border: '1px solid rgba(0,229,160,0.18)',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: '1.6rem',
-        }}>{project.icon}</div>
-        <ProjectLinks github={project.github} live={project.live} column />
+        <div style={{ position: 'absolute', top: 20, left: 20 }}>
+          <span style={{
+            background: 'var(--accent-dim)', border: '1px solid rgba(0,229,160,0.25)',
+            color: 'var(--accent)', fontFamily: 'JetBrains Mono, monospace',
+            fontSize: '0.62rem', letterSpacing: '0.12em',
+            textTransform: 'uppercase', padding: '4px 10px',
+            borderRadius: 4, display: 'inline-block',
+            backdropFilter: 'blur(4px)',
+          }}>
+            ⭐ Featured Project
+          </span>
+        </div>
       </div>
 
       {/* Right panel */}
-      <div style={{ padding: '28px 30px', flex: '1 1 300px' }}>
-        <div style={{
-          fontFamily: 'JetBrains Mono, monospace',
-          fontSize: '0.7rem', color: 'var(--text-dim)',
-          letterSpacing: '0.06em', marginBottom: 10,
-        }}>{project.period}</div>
+      <div style={{ padding: '28px 30px', flex: '1 1 50%', display: 'flex', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 }}>
+          <div style={{
+            fontFamily: 'JetBrains Mono, monospace',
+            fontSize: '0.7rem', color: 'var(--accent)',
+            letterSpacing: '0.06em',
+          }}>{project.period}</div>
+          <ProjectLinks github={project.github} live={project.live} />
+        </div>
         <h3 style={{
           fontFamily: 'Syne, sans-serif', fontSize: '1.4rem',
           fontWeight: 700, marginBottom: 12,
@@ -127,6 +127,13 @@ function ProjectCard({ project }) {
         transition: 'border-color 0.3s',
       }}
     >
+      {project.image && (
+        <div style={{
+          width: '100%', height: 160,
+          background: `url(${project.image}) center/cover no-repeat`,
+          borderBottom: '1px solid var(--border)'
+        }} />
+      )}
       <div style={{
         padding: '24px 24px 0',
         display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start',

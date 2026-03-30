@@ -8,10 +8,11 @@ const NAV_LINKS = [
   { label: 'Skills',     href: '#skills' },
   { label: 'Projects',   href: '#projects' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Certificates', href: '#certificates' },
   { label: 'Contact',    href: '#contact' },
 ]
 
-const SECTION_IDS = ['about', 'skills', 'projects', 'experience', 'contact']
+const SECTION_IDS = ['about', 'skills', 'projects', 'experience', 'certificates', 'contact']
 
 /* ── Icons (inline SVG to avoid icon-lib dependency) ── */
 const MoonIcon = () => (

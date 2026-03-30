@@ -54,12 +54,16 @@ export default function Hero() {
         pointerEvents: 'none',
       }} />
 
-      <div className="container" style={{ position: 'relative', zIndex: 1, maxWidth: 1140 }}>
+      <div className="container" style={{
+        position: 'relative', zIndex: 1, maxWidth: 1140,
+        display: 'flex', flexWrap: 'wrap-reverse', alignItems: 'center',
+        justifyContent: 'space-between', gap: '40px'
+      }}>
         <motion.div
           variants={container}
           initial="hidden"
           animate="visible"
-          style={{ maxWidth: 820 }}
+          style={{ maxWidth: 720, flex: '1 1 500px' }}
         >
           {/* Available badge */}
           <motion.div variants={badgeVariant} style={{ marginBottom: 32 }}>
@@ -168,6 +172,25 @@ export default function Hero() {
             </a>
           </motion.div>
         </motion.div>
+
+        {/* Hero Image */}
+        {personal.image && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+            style={{ flex: '1 1 300px', display: 'flex', justifyContent: 'center' }}
+          >
+            <div style={{
+              width: 'min(380px, 100vw - 80px)',
+              aspectRatio: '1/1',
+              borderRadius: '50%',
+              background: `url(${personal.image}) center/cover no-repeat`,
+              boxShadow: '0 20px 60px rgba(0,229,160,0.2)',
+              border: '4px solid var(--surface)',
+            }} />
+          </motion.div>
+        )}
       </div>
 
       {/* Scroll indicator */}
