@@ -16,7 +16,7 @@ export const personal = {
   location: 'Phagwara, Punjab, India',
   github: 'https://github.com/antish4149',
   linkedin: 'https://www.linkedin.com/in/antish-kumar-yadav/',
-  image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop',
+  image: '#',
   available: true,
 }
 
